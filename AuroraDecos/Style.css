@@ -1,0 +1,128 @@
+﻿body {
+    background-color: floralwhite;
+    margin: 0px;
+}
+
+#titleName {
+    color: #68af8d;
+    font-size: 90px;
+    margin-top: 30px;
+    font-family: Forte, Georgia;
+}
+
+#topLine {
+    height: 10px;
+    background-color: #489772;
+    margin-bottom:10px;
+}
+
+.navibutton {
+    font-size: 16pt;
+    font-weight: 500;
+    color: #3c785c;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#desc {
+    font-size: 16pt;
+    color: #3c785c;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin:30px;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    color: linen;
+    height:80px;
+    margin-top:50px;
+}
+
+.prod_category {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#divTblProduct{
+    margin-top: 50px;
+}
+
+
+#tblProductss {
+    margin: auto;
+}
+
+.subheadings {
+    font-family: 'Harlow Solid', Georgia;
+    font-size: 45px;
+    color: #68af8d;
+    margin-bottom: 20px;
+}
+
+.horLine {
+    background-color: #489772;
+    height:3px;
+}
+
+#divTblProduct {
+    padding-top:40px;
+    background-color: #dae8e2;
+}
+
+.categoryName {
+    font-size: 18px;
+    font-weight:200;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #3c785c;
+}
+
+.prodName {
+    font-size: 22px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #1f4f39;
+}
+
+#tblProductDetail {
+    width: 70%;
+    margin: 50px auto auto auto;
+}
+
+#tblProductItemDetail{
+  
+}
+
+#tblProductItemDetail tr td {
+    padding: 15px;
+}
+
+#divDecoProductDetail {
+    margin:auto;
+    width:80%;
+    display:flex;
+    align-content:center;
+    align-items:center;
+}
+
+#btnAddToCart{
+    background-color:darkred;
+}
+
+#logintable {
+    margin: 50px auto 30px auto;
+    padding: 30px 0px 30px 0px;
+    border-radius: 10px;
+    width: 30%;
+    background-color: beige;
+}
+
+
+#loginbuttons div {
+    margin: 10px auto 5px auto;
+}
+
+#tblLogin {
+    margin-top: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:18px;
+}

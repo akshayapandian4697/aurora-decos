@@ -1,0 +1,79 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="AuroraDecos.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Aurora Decos</title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Style.css" rel="stylesheet" />
+    <script src="Scripts/bootstrap.min.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="~/IMG/shelf.png" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div id="topLine">
+
+            </div>
+
+            <div id="navigationLinkss" class="d-flex flex-row justify-content-end">
+
+                <div>
+                    <asp:Button ID="btnNavHome" runat="server" Text="Home" CssClass="btn border-1 navibutton text-center display-3 " OnClick="btnNavHome_Click" />
+                </div>
+
+                <div>
+                    <asp:Button ID="btnIndoorProd" runat="server" Text="Indoor Products" CssClass="btn border-1 navibutton text-center" OnClick="btnIndoorProd_Click"  />
+                </div>
+                <div>
+                    <asp:Button ID="btnoutdoorProd" runat="server" Text="Outdoor Products" CssClass="btn border-1 navibutton text-center" OnClick="btnoutdoorProd_Click"  />
+                </div>
+                 <div>
+                    <asp:Button ID="btnDecoCategory" runat="server" Text="Deco Category" CssClass="btn border-1 navibutton text-center" OnClick="btnDecoCategory_Click"   />
+                </div>
+
+                <% if (Request.Cookies["UserInfo"] == null)
+                    { %>
+                        <div>
+                            <asp:Button ID="btnLogin" runat="server" Text="Login" CssClass=" btn border-1 navibutton text-center" OnClick="btnLogin_Click"  />
+                        </div>
+                <% } %>
+
+
+
+                <% if (Request.Cookies["UserInfo"] != null)
+                    {
+                        HttpCookie cookie = Request.Cookies["UserInfo"];
+                        if (cookie != null)
+                        { %>
+                            <div>
+                                <asp:Button ID="btnLogout" runat="server" Text="Logout" CssClass=" btn border-1 navibutton text-center" OnClick="btnLogout_Click" />
+                            </div>
+                <% }
+                    } %>
+            </div>
+            <div>
+                <h1 id="titleName" class="text-center">Aurora Decos</h1>
+            </div>
+
+           <hr class="horLine" />
+
+            <asp:ContentPlaceHolder ID="navPlaceHolder" runat="server">
+            </asp:ContentPlaceHolder>
+
+        </div>
+    </form>
+
+    <footer class="align-content-center">
+        <p>Copyright@Aurora Decos</p>
+        <p>Doon Valley Drive, Kitchener, ON, Canada</p>
+        <asp:ContentPlaceHolder ID="footerPlaceHolder" runat="server">
+        </asp:ContentPlaceHolder>
+    </footer>
+</body>
+
+</html>
+
